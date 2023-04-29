@@ -77,7 +77,9 @@ dependencies {
 
   // Room
   implementation "androidx.room:room-runtime:2.2.6"
-  kapt "androidx.room:room-compiler:2.2.6"
+  implementation 'androidx.test.ext:junit-ktx:1.1.5'
+  androidTestImplementation 'junit:junit:4.12'
+    kapt "androidx.room:room-compiler:2.2.6"
 
   // Coroutines
   implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
