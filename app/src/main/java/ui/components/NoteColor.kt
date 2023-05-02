@@ -1,4 +1,5 @@
 package ui.components
+
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.runtime.Composable
 import androidx.compose.foundation.layout.Box
@@ -15,34 +16,37 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+
+
+
 @Composable
 fun NoteColor(
-    modifier: Modifier = Modifier,
+    modifier: Modifier=Modifier,
     color: Color,
     size: Dp,
-    padding: Dp = 0.dp,
+    padding: Dp=0.dp,
     border: Dp
 ){
-
-
     Box(
-
-                modifier = modifier
-                .padding(padding)
+        modifier = Modifier
+            .padding(padding)
             .size(size)
-            .clip(CircleShape)
             .background(color)
+            .clip(CircleShape)
             .border(
-                BorderStroke(
+                border = BorderStroke(
                     2.dp,
                     SolidColor(Color.Black)
                 ),
                 CircleShape
+
             )
     )
 }
+
+
 @Preview
 @Composable
 fun NoteColorPreview(){
-    NoteColor(color = Color.Red, size = 40.dp, padding = 4.dp, border = 2.dp)
+    NoteColor(color = Color.Red,size=40.dp,padding=4.dp,border=2.dp)
 }
