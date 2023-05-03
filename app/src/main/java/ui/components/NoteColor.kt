@@ -29,7 +29,6 @@ fun NoteColor(
 ){
     Box(
         modifier = Modifier
-            .padding(padding)
             .size(size)
             .background(color)
             .clip(CircleShape)
@@ -48,5 +47,5 @@ fun NoteColor(
 @Preview
 @Composable
 fun NoteColorPreview(){
-    NoteColor(color = Color.Red,size=40.dp,padding=4.dp,border=2.dp)
+    NoteColor(color = Color.Red,size=40.dp,border=2.dp)
 }
